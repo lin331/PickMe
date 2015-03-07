@@ -1,6 +1,7 @@
 package com.example.aneesh.testing_app;
 
-import android.support.v7.app.ActionBarActivity;
+import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -11,18 +12,20 @@ import android.widget.ListView;
 import android.widget.Toast;
 
 
-public class MainActivity extends ActionBarActivity {
+public class SportsList extends Activity {
     ListView listView;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.SportsList);
         listView = (ListView) findViewById(R.id.list);
 
         String[] values = new String[] {"Basketball",
                                         "Football",
                                         "Baseball",
-                                        "Soccer"};
+                                        "Soccer",
+                                        "Cricket",
+                                        "Ultimate Frisbee"};
 
         ArrayAdapter<String>adapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, android.R.id.text1, values);
         listView.setAdapter(adapter);
@@ -32,10 +35,11 @@ public class MainActivity extends ActionBarActivity {
                 int itemposition = position;
                 String itemvalue = (String) listView.getItemAtPosition(position);
                 Toast.makeText(getApplicationContext(),
-                        "Position :"+itemposition+"ListItem.get")
+                        "Position :"+itemposition+"ListItem:"+itemvalue, Toast.LENGTH_LONG).show();
 
             }
         });
+
     }
 
 
@@ -59,5 +63,10 @@ public class MainActivity extends ActionBarActivity {
         }
 
         return super.onOptionsItemSelected(item);
+    }
+
+    public void profile (View view) {
+        Intent intent = new Intent(this, Profile.class);
+        startActivity(intent);
     }
 }

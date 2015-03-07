@@ -3,4 +3,9 @@
 
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
+<<<<<<< HEAD
+    <string name="title_activity_profile">Profile</string>
+=======
+    <string name="title_activity_map">MapActivity</string>
+>>>>>>> origin/master
 </resources>
