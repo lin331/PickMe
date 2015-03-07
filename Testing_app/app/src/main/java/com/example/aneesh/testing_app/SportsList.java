@@ -17,7 +17,7 @@ public class SportsList extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.SportsList);
+        setContentView(R.layout.sportslist);
         listView = (ListView) findViewById(R.id.list);
 
         String[] values = new String[] {"Basketball",
