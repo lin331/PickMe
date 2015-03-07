@@ -17,18 +17,16 @@
             </intent-filter>
         </activity>
         <activity
-<<<<<<< HEAD
-<<<<<<< HEAD
             android:name=".Profile"
             android:label="@string/title_activity_profile" >
-=======
+        </activity>
+        <activity
             android:name=".MapActivity"
             android:label="@string/title_activity_map" >
->>>>>>> origin/master
-=======
-            android:name=".MapActivity"
-            android:label="@string/title_activity_map" >
->>>>>>> origin/master
+        </activity>
+        <activity
+            android:name=".NewsfeedActivity"
+            android:label="@string/title_activity_main_activity2" >
         </activity>
     </application>
 

@@ -11,5 +11,6 @@
 >>>>>>> origin/master
 =======
     <string name="title_activity_map">MapActivity</string>
+    <string name="title_activity_main_activity2">MainActivity2Activity</string>
 >>>>>>> origin/master
 </resources>

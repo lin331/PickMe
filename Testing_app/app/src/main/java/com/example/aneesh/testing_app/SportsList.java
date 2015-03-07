@@ -69,4 +69,14 @@ public class SportsList extends Activity {
         Intent intent = new Intent(this, Profile.class);
         startActivity(intent);
     }
+
+    public void newsfeed (View view) {
+        Intent intent = new Intent(this, NewsfeedActivity.class);
+        startActivity(intent);
+    }
+
+    public void map (View view) {
+        Intent intent = new Intent(this, MapActivity.class);
+        startActivity(intent);
+    }
 }
