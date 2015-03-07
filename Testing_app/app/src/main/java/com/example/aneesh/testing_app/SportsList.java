@@ -1,6 +1,7 @@
 package com.example.aneesh.testing_app;
 
-import android.support.v7.app.ActionBarActivity;
+import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -11,18 +12,20 @@ import android.widget.ListView;
 import android.widget.Toast;
 
 
-public class MainActivity extends ActionBarActivity {
+public class SportsList extends Activity {
     ListView listView;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.sportslist);
         listView = (ListView) findViewById(R.id.list);
 
         String[] values = new String[] {"Basketball",
                                         "Football",
                                         "Baseball",
-                                        "Soccer"};
+                                        "Soccer",
+                                        "Cricket",
+                                        "Ultimate Frisbee"};
 
         ArrayAdapter<String>adapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, android.R.id.text1, values);
         listView.setAdapter(adapter);
@@ -36,6 +39,7 @@ public class MainActivity extends ActionBarActivity {
 
             }
         });
+
     }
 
 
@@ -59,5 +63,20 @@ public class MainActivity extends ActionBarActivity {
         }
 
         return super.onOptionsItemSelected(item);
+    }
+
+    public void profile (View view) {
+        Intent intent = new Intent(this, Profile.class);
+        startActivity(intent);
+    }
+
+    public void newsfeed (View view) {
+        Intent intent = new Intent(this, NewsfeedActivity.class);
+        startActivity(intent);
+    }
+
+    public void map (View view) {
+        Intent intent = new Intent(this, MapActivity.class);
+        startActivity(intent);
     }
 }
