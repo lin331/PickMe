@@ -32,7 +32,7 @@ public class MainActivity extends ActionBarActivity {
                 int itemposition = position;
                 String itemvalue = (String) listView.getItemAtPosition(position);
                 Toast.makeText(getApplicationContext(),
-                        "Position :"+itemposition+"ListItem.get")
+                        "Position :"+itemposition+"ListItem:"+itemvalue, Toast.LENGTH_LONG).show();
 
             }
         });
