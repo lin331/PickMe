@@ -58,7 +58,7 @@ import android.animation.IntEvaluator;
         import java.util.Timer;
         import java.util.TimerTask;
 
-public class MainActivity extends ActionBarActivity {
+public class MapActivity extends ActionBarActivity {
 
     private GoogleMap mMap;
 
@@ -81,7 +81,7 @@ public class MainActivity extends ActionBarActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_map);
 
         //hackaton
         //setUpMapIfNeeded();
@@ -159,7 +159,7 @@ public class MainActivity extends ActionBarActivity {
     public boolean onCreateOptionsMenu(Menu menu) {
 
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.main, menu);
+        //getMenuInflater().inflate(R.menu.main, menu);
         return true;
     }
 

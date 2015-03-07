@@ -15,15 +15,10 @@
 
     <ListView
             android:layout_width="wrap_content"
-<<<<<<< HEAD:Testing_app/app/src/main/res/layout/SportsList.xml
-            android:layout_height="530dp"
+            android:layout_height="wrap_content"
             android:id="@+id/list"
             android:layout_centerHorizontal="true"
             android:layout_alignParentTop="true" />
-=======
-            android:layout_height="wrap_content"
-            android:id="@+id/list" />
->>>>>>> origin/master:Testing_app/app/src/main/res/layout/sportslist.xml
 
     <LinearLayout
         android:layout_width="match_parent"
