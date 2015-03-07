@@ -4,7 +4,11 @@
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
 <<<<<<< HEAD
+<<<<<<< HEAD
     <string name="title_activity_profile">Profile</string>
+=======
+    <string name="title_activity_map">MapActivity</string>
+>>>>>>> origin/master
 =======
     <string name="title_activity_map">MapActivity</string>
 >>>>>>> origin/master

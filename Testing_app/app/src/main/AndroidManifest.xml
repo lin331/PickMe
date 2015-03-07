@@ -18,8 +18,13 @@
         </activity>
         <activity
 <<<<<<< HEAD
+<<<<<<< HEAD
             android:name=".Profile"
             android:label="@string/title_activity_profile" >
+=======
+            android:name=".MapActivity"
+            android:label="@string/title_activity_map" >
+>>>>>>> origin/master
 =======
             android:name=".MapActivity"
             android:label="@string/title_activity_map" >
